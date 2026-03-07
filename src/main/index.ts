@@ -513,18 +513,21 @@ function normalizeServer(candidate: ServerCandidate): DiscoveredServer {
 async function discoverServers(): Promise<DiscoveredServer[]> {
   const home = homedir()
   const claudePath = join(home, '.claude', 'mcp.json')
+  const claudeDotPath = join(home, '.claude', '.mcp.json')
   const codexPath = join(home, '.codex', 'config.toml')
 
-  const [claudeJson, codexServers, projectServers] = await Promise.all([
+  const [claudeJson, claudeDotJson, codexServers, projectServers] = await Promise.all([
     readJsonFile(claudePath),
+    readJsonFile(claudeDotPath),
     readCodexServers(codexPath),
     readProjectServers(process.cwd())
   ])
 
   const claudeServers = extractServersFromJson(claudeJson, 'Claude Code', '~/.claude/mcp.json')
+  const claudeDotServers = extractServersFromJson(claudeDotJson, 'Claude Code', '~/.claude/.mcp.json')
   const envServers = parseEnvironmentServers()
 
-  const normalized = [...claudeServers, ...codexServers, ...projectServers, ...envServers]
+  const normalized = [...claudeServers, ...claudeDotServers, ...codexServers, ...projectServers, ...envServers]
     .map((server) => normalizeServer(server))
     .sort((left, right) => {
       const sourceCompare = left.source.localeCompare(right.source)
